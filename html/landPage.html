@@ -1,0 +1,97 @@
+<!-- FS WD LEVEL ONE TASK 15 - LANDING HTML FILE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kool's KandyLand</title>
+    <!-- Disclaimer: This webpage utilizes both CSS and Bootstrap stylings. -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- CDN link for Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/jQuery.js"></script>
+  </head>
+  <body class="page-color">
+    <!-- NAVBAR SECTION -->
+    <nav id="navbar" class="navbar navbar-expand-lg p-2 sticky-top">
+      <ul class="navbar-nav fs-4">
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/landPage.html">Home</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/products.html"
+            >Products</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/cart.html">Cart</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/testimonial.html"
+            >Testimonials</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/contact.html"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <!-- Shopping cart Icon with item display -->
+      <div class="cart-navbar d-flex ms-auto me-3">
+        <div class="cart-icon-qty">
+          <i class="bi bi-cart2"></i>
+          <div id="cart-amount" class="cart-amount">0</div>
+        </div>
+        <div class="cart-prod-link">
+          <a href="../html/cart.html">Go to Cart</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN BODY SECTION -->
+    <div class="landing-content">
+      <div class="intro-container">
+        <h1 id="intro-heading">Welcome to Kool's KandyLand!</h1>
+      </div>
+      <div class="login-container">
+        <h2>Login Here</h2>
+        <form class="login-form">
+          <label>Email Address:</label>
+          <br />
+          <input type="email" name="email" placeholder="john@example.com" />
+          <br />
+          <label>Password:</label>
+          <br />
+          <input type="password" placeholder="Enter Password" />
+          <br />
+          <button id="login-btn">Login</button>
+          <p class="link">Don't have an account</p>
+          <a href="#">Sign up</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="justify-content-center">
+      <footer>
+        <h6 class="text-center">
+          2022 Kool's KandyLand, Pty Ltd. All rights reserved.
+        </h6>
+      </footer>
+    </div>
+    <script src="../js/cartIcon.js"></script>
+  </body>
+</html>

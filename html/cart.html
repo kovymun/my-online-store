@@ -1,0 +1,150 @@
+<!-- FS WD LEVEL ONE TASK 15 - SHOPPING CART HTML FILE -->
+<!-- KINDLY REFER TO THE END OF THIS DOCUMENT FOR ALL ACKNOWLEDGEMENTS AND REFERENCES -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kool's Kandyland Cart</title>
+    <!-- Disclaimer: This webpage utilizes both CSS and Bootstrap stylings. -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- CDN link for Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body class="page-color">
+    <nav id="navbar" class="navbar navbar-expand-lg p-2 sticky-top">
+      <ul class="navbar-nav fs-4">
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/landPage.html">Home</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/products.html"
+            >Products</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/cart.html">Cart</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/testimonial.html"
+            >Testimonials</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link text-black" href="../html/contact.html"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <!-- Navbar shopping cart Icon with number of item display -->
+      <div class="cart-navbar d-flex ms-auto me-3">
+        <div class="cart-icon-qty">
+          <i class="bi bi-cart2"></i>
+          <div id="cart-amount" class="cart-amount">0</div>
+        </div>
+        <div class="cart-prod-link">
+          <a href="../html/products.html">View Products</a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <h1>SHOPPING CART</h1>
+      <h3 class="mt-3">Summary of all your transactions:</h3>
+    </header>
+
+    <!-- SHOPPING CART DETAILS -->
+    <!-- Container to display both the total amount due by the customer, and whether the shopping cart is empty.-->
+    <div class="cart-empty-display" id="cart-empty-display"></div>
+
+    <!-- Container for the all the product cards added to the cart by the user. -->
+    <div class="shopping-cart" id="shopping-cart"></div>
+
+    <!-- DELIVERY DETAILS FOR THE SHOPPING CART-->
+    <header class="del-header">
+      <h1>DELIVERY OPTIONS</h1>
+      <h3 class="mt-3">Please select your delivery option:</h3>
+    </header>
+
+    <!-- Form: Radio buttons for user to select “collection” or “delivery” of their purchased products.  -->
+    <form class="delivery-radio">
+      <div class="radio-group">
+        <label class="radio"
+          ><input
+            type="radio"
+            id="del-collection"
+            name="del-option"
+            value="collection"
+          />
+          In-store collection
+        </label>
+
+        <label class="radio">
+          <input
+            type="radio"
+            id="del-delivery"
+            name="del-option"
+            value="delivery"
+          />Delivery</label
+        >
+      </div>
+    </form>
+
+    <!-- Form: Select menu for the user to select their preferred delivery option. -->
+    <div class="del-select-menu">
+      <select
+        id="del-selection"
+        onchange="deliverySelection()"
+        onclick="deliveryPrice()"
+      >
+        <option value="" disabled selected>
+          --Please select your delivery option--
+        </option>
+      </select>
+    </div>
+
+    <!-- DISCOUNT COUPON SECTION -->
+    <div class="discount">
+      <label class="discount-label"
+        >Enter COUPON CODE "CHOCOLATE" and get R5 off your purchase!</label
+      >
+      <input id="discount-user-input" class="discount-user-input" type="text" />
+      <button class="discount-btn" onclick="userDiscount()">
+        Apply Discount
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <div class="container justify-content-center mt-5">
+        <footer>
+          <h6 class="text-center">
+            2022 Kool's KandyLand, Pty Ltd. All rights reserved.
+          </h6>
+        </footer>
+      </div>
+    </section>
+
+    <script src="../js/prodInventory.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>
+
+<!-- ACKNOWLEDGEMENTS AND REFERENCES -->
+<!-- 
+  Utilized Bootstrap Icons to complete this project.
+  Icons used - Shopping Cart, and Plus and Minus to increment and decrement the number of items in the shopping cart.
+  Referenced the Bootstrap Icons website for this information.
+  https://icons.getbootstrap.com/
+ -->

@@ -1,0 +1,534 @@
+/***FS WD LEVEL ONE TASK 15 - CSS FILE***/
+/* 
+Disclaimer: This webpage utilizes both CSS and Bootstrap stylings.
+
+Common CSS references used to complete this task are listed below:
+Websites:
+CSS tricks https://css-tricks.com/
+w3schools https://www.w3schools.com/css/default.asp
+MDN Dev Docs https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+*/
+/* 
+Took the opportunity to use Google Fonts as part of my learnings for this Boot camp.
+Referenced the font family: Inter Tight as shared below
+https://fonts.google.com/share?selection.family=Inter%20Tight:wght@300%7CRoboto:wght@300
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Roboto:wght@300&display=swap");
+
+/*** STYLING RELATED TO ALL PAGES ***/
+/* 
+Removing the default styling and adding styling common to all webpages/elements.
+Applying font-family: Inter tight by using Google fonts.
+Font-colors for this page resemble chocolate tones in line with the theme of this store.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.page-color {
+  background-color: #faf4b7;
+}
+
+header {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+/*** STYLING RELATED TO THE LANDING PAGE ***/
+/* Navbar BG color */
+.navbar {
+  background: #ffd372;
+}
+
+/* INTRO SECTION */
+.landing-content {
+  width: 80%;
+  height: 80vh;
+  margin: 70px auto 70px auto;
+}
+
+/* FLOAT BOXES */
+.intro-container {
+  float: left;
+  width: 45%;
+  height: 80vh;
+  border-radius: 8px;
+  background: #ffd372;
+  text-align: center;
+}
+
+.intro-container > h1 {
+  font-size: 80px;
+  position: relative;
+  top: 20%;
+  font-weight: bolder;
+}
+
+/* Styling the login section of the landing page */
+.login-container {
+  float: right;
+  width: 45%;
+  height: 80vh;
+  background: #ffd372;
+  border-radius: 8px;
+}
+
+.login-container > h2 {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  font-weight: bold;
+}
+
+.login-container > form {
+  width: 300px;
+  height: 40vh;
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
+
+.login-form > label {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.login-form > input {
+  width: inherit;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.login-form > a {
+  color: #3c2317;
+  position: relative;
+  top: -7%;
+}
+
+.login-form > a:hover {
+  color: white;
+}
+
+#login-btn {
+  font-size: 20px;
+  width: inherit;
+  border: none;
+  border-radius: 5px;
+  background-color: #3c2317;
+  color: white;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* STYLING RELATED TO THE TESTIMONIAL PAGE */
+.test-container {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 50px;
+  background: #ffd372;
+  border-radius: 5px;
+}
+
+.test-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* 
+Researched and applied color filters on the testimonial images.
+Utilized the grayscale() and sepia() functions.
+Referenced the CSS-tricks website for more information.
+https://css-tricks.com/almanac/properties/f/filter/
+*/
+#test-image-one {
+  width: 400px;
+  height: auto;
+  float: left;
+  border: 1px solid #472d2d;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 10px;
+  filter: grayscale(100%);
+}
+
+#test-image-two {
+  width: 200px;
+  height: auto;
+  float: right;
+  border: 1px solid #472d2d;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 0 0 0 10px;
+}
+
+#test-image-three {
+  width: 200px;
+  height: auto;
+  float: left;
+  border: 1px solid #472d2d;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 10px;
+  filter: sepia(90%);
+}
+
+#test-descr-one {
+  margin-top: 10px;
+}
+
+/* Text decoration for customer testimonials and headings */
+.text-highlight {
+  font-weight: bold;
+  color: #472d2d;
+}
+
+/* Making certain text italic in the testimonial section */
+.text-special {
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
+/* STYLING RELATED TO THE CONTACT US PAGE SECTION */
+.contact-content {
+  width: 80%;
+  height: 85vh;
+  margin: 50px auto 100px auto;
+}
+
+/* FLOAT BOXES */
+/* ADDRESS SECTION STYLINGS */
+.address-contact {
+  float: left;
+  width: 45%;
+  height: 85vh;
+  border-radius: 8px;
+  background: #ffd372;
+}
+
+.address-content {
+  position: relative;
+  top: 8%;
+  left: 18%;
+}
+
+.address-content > h3 {
+  margin-top: 15px;
+}
+
+/* Applying a font-style of oblique to the p elements of the address content. */
+.address-content > p {
+  margin: 4px;
+  padding: 0 0 5px 10px;
+  font-style: oblique;
+}
+
+.address-content > a {
+  color: #3c2317;
+  padding-right: 8px;
+}
+
+.address-content > a:hover {
+  color: white;
+}
+
+/* PHONE CONTACT SECTION STYLINGS */
+.phone-contact {
+  float: right;
+  width: 45%;
+  height: 85vh;
+  background: #ffd372;
+  border-radius: 8px;
+}
+
+.phone-content {
+  position: relative;
+  top: 8%;
+  left: 18%;
+}
+
+.phone-content > p {
+  margin: 4px;
+  padding: 0 0 5px 10px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* STYLING RELATED TO THE NAVBAR ICON FOR THE SHOPPING CART */
+.cart-navbar {
+  display: flex;
+  flex-direction: column;
+  color: #472d2d;
+  font-size: 30px;
+  padding: 8px;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid #472d2d;
+  border-radius: 5px;
+}
+
+.cart-icon-qty {
+  display: flex;
+}
+
+.cart-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5vh;
+  background-color: #472d2d;
+  color: #faf4b7;
+  font-size: 18px;
+  padding: 0px 5px;
+  border-radius: 3px;
+}
+
+.cart-prod-link > a {
+  text-decoration: none;
+  background-color: #3c2317;
+  color: #ffd372;
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.cart-prod-link > a:hover {
+  color: #ffd372;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/*** STYLING RELATED TO THE PRODUCTS PAGE ***/
+.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 310px));
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.item > img {
+  width: 306px;
+  height: 297px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px 3px 0 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(255, 211, 114);
+}
+
+/* Display:flex has a default flex direction of 'row' */
+.price-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c2317;
+  color: #ffd372;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.quantity-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  font-size: 21px;
+}
+
+/* Cursor styling for the increment and decrement buttons */
+#minus,
+#plus {
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------*/
+/* STYLING RELATED TO THE SHOPPING CART PAGE SECTION */
+/* Empty cart portion */
+.cart-empty-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-btn {
+  font-size: 20px;
+  background-color: #3c2317;
+  color: #faf4b7;
+  padding: 8px;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+
+/* Full cart portion styling options */
+/* Shopping Cart styles */
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+  justify-content: center;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  border: 2px solid #472d2d;
+  border-radius: 5px;
+  height: 21vh;
+}
+.cart-item > img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.item-title-price {
+  display: flex;
+  width: 293px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-title-price > i {
+  color: #3c2317;
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
+
+.title-price {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 9px;
+  margin-top: 5px;
+}
+
+.cart-item-title {
+  padding: 3px 6px;
+}
+
+.cart-item-price {
+  background-color: #3c2317;
+  color: #faf4b7;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+.cart-quantity-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 8px;
+  font-size: 21px;
+  margin-left: 9px;
+}
+
+.item-tprice {
+  margin-left: 9px;
+}
+
+/* DELIVERY OPTION SECTION OF THE SHOPPING CART PAGE */
+/* RADIO BUTTONS */
+.delivery-radio {
+  background-color: #3c2317;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: auto;
+  padding: 10px;
+}
+
+.radio-group {
+  width: 200px;
+  margin: auto;
+}
+
+.radio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 200px;
+  color: #faf4b7;
+  font-size: 20px;
+}
+
+.radio > input {
+  margin-right: 5px;
+}
+
+/* 
+Researched how to change the color of the radio button in the delivery section.
+Referenced the GeeksforGeeks website for this information
+https://www.geeksforgeeks.org/how-to-change-the-color-of-radio-buttons-using-css/
+*/
+input[type="radio"] {
+  accent-color: #472d2d;
+}
+
+/* SELECT MENU - DELIVERY OPTIONS */
+.del-select-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.del-select-menu > select {
+  background-color: #3c2317;
+  color: #faf4b7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* DISCOUNT USER-INPUT STYLING */
+.discount {
+  text-align: center;
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+.discount-label {
+  font-size: 25px;
+}
+
+.discount-user-input {
+  border: 2px solid #472d2d;
+  border-radius: 5px;
+  background-color: #ffd372;
+  margin: 0 10px 0 10px;
+  height: 40px;
+  text-align: center;
+}
+
+.discount-btn {
+  background-color: #3c2317;
+  color: #faf4b7;
+  padding: 5px;
+  border-radius: 5px;
+}
