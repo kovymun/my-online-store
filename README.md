@@ -4,7 +4,7 @@
 * [Description](#description)
 * [Tools and Programming languages used](#tools-and-programming-languages-used)
 * [Installation guide](#installation-guide)
-* [Usage guide](#usage-section)
+* [Usage guide](#usage-guide)
 * [Credits Section](#credits-section)
 
 ## Description:
