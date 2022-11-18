@@ -1,10 +1,10 @@
 # Front-End online e-commerce website (Web Development).
 
 ## Table of Contents:
-* Description.
-* Tools and Programming languages used.
-* Installation guide.
-* Usage guide.
+* [Description](#description)
+* [Tools and Programming languages used](#tools-and-programming-languages-used)
+* [Installation guide](#installation-guide)
+* [Usage guide](#usage-section)
 * [Credits Section](#credits-section)
 
 ## Description:
