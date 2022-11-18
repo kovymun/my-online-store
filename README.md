@@ -36,14 +36,13 @@ Once you have downloaded the repository, the Download.zip folder should contain 
 * *js folder* (this holds all the JavaScript files for the project).
 * *images folder* (this holds all the images incorporated into the project).
 
-![html folder](https://user-images.githubusercontent.com/78513588/202684523-18bf02fe-8579-48d0-830f-b7a08c91bfe9.png)
-
 To view the webpage:
 * Navigate to the HTML folder
 * Double click on the **landPage.html** located within the HTML folder.
 * This will open the landing Home Page of the Kool's Kandyland online-store website. 
 * Use the navigation bar to browse through the various sections of the web page.
 
+![html folder](https://user-images.githubusercontent.com/78513588/202684523-18bf02fe-8579-48d0-830f-b7a08c91bfe9.png)
 ![webpage homepage](https://user-images.githubusercontent.com/78513588/202684768-1ce1ec7f-c588-4ecf-abbb-a0f959972151.png)
 
 ## Usage Guide:
