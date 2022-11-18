@@ -5,7 +5,7 @@
 * Tools and Programming languages used.
 * Installation guide.
 * Usage guide.
-* Credit section.
+* [Credits Section](#credits-section)
 
 ## Description:
 This is a **Front End web development learning project** - of a fictious online e-commerce store entitled *Kool’s Kandyland.*
