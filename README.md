@@ -59,7 +59,7 @@ Once satisfied with the selection, you can navigate to the shopping cart page by
 
 In the shopping cart, you are presented with your selected items, an optional discount form, delivery options and total amount due by the customer, as displayed below:
 On the shopping cart, itself, you can add and remove items accordingly.
-The user can then **Checkout** once satisfied with their purchase.
+The user can then **Confirm Order** once satisfied with their purchase.
 
 ![Shopping cart](https://user-images.githubusercontent.com/78513588/202685649-16b36692-7daf-4ce9-ba82-0446122cc5c3.png)
 ![delivery and discount section](https://user-images.githubusercontent.com/78513588/202685750-65128860-c7e0-45f2-b564-591ab9cddb2b.png)
